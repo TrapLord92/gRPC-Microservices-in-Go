@@ -1,1 +1,1 @@
-# gRPC-Microservices-in-Go
+# `gRPC Microservices in Go`
