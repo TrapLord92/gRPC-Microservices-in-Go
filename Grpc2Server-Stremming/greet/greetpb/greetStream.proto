@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package greetserverstremming;
+option go_package="serverstremmingpb/";
+
+// Greeting message containing first and last name
+message GreetingStream {
+    string first_name = 1;
+    string last_name = 2;
+}
+
+// Request message for the streaming service
+message GreetStreamRequest {
+    GreetingStream greeting = 1;
+}
+
+// Response message for the streaming service
+message GreetStreamResponse {
+    string result = 1;
+}
+
+// Service definition with a streaming RPC
+service GreetStreamService {
+    rpc GreetStreeming(GreetStreamRequest) returns (stream GreetStreamResponse);
+}
