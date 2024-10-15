@@ -36,4 +36,5 @@ func main() {
 	}
 
 	log.Printf(color.RedString("Note info:\n"), color.GreenString("%+v", r.GetNote()))
+	log.Printf("Connected to the server")
 }
